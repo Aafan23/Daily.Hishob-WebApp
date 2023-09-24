@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Products List</title>
+</head>
+<body>
+    <div class="product-nav">
+        <img src="img/icons8-back-96.png" alt="">
+        <h4>Products List</h4>
+    </div>
+    <div class="search-bar">
+        <div class="search-box">
+            <input type="text" placeholder="Search Items">
+        </div>
+    </div>
+
+    <div class="product-list">
+        <div class="list-box">
+            <div class="box-1">
+                <label id="lable-product" for="">Code: ABC45</label>
+                <h3>Oracle Poly Bag</h3>
+                <div class="item-details">
+                    <h4>Size: 13 x 16</h4>
+                    <h4>Color: Blue</h4>
+                    <h4>Qty Remaining: 50</h4>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <h3>₹ <span>400</span></h3>
+                <div class="item-qty">
+                    <span class="minus">-</span>
+                    <input type="text" value="1"/>
+                    <span class="plus">+</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        	$(document).ready(function() {
+			$('.minus').click(function () {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.plus').click(function () {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+    </script>
+</body>
+</html>
