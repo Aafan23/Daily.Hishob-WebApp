@@ -91,6 +91,62 @@ width: 30vw;
         height: auto;
         padding: 3vw;
     }
+.home-options{
+    width: 100%;
+    height: 100vw;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 7.5vw;
+}
+.option-1{
+    width: 40vw;
+    height: 40vw;
+    margin-top: 6vw;
+   
+}
+.img-box{
+    width: 100%;
+    height: 87%;
+    background-image: url('img/product\ list.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vw;
+}
+#img-2{
+    background-image: url('img/daily\ hishob.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vw;
+}
+#img-3{
+    background-image: url('img/invoice.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vw;
+}
+#img-4{
+    background-image: url('img/Bill.jfif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 3vw;
+}
+   
 
+.option-footer{
+    width: 100%;
+    height: 5vw;
+    background-color: #f3f1f1;
+ 
+    text-align: center;
+}
+.option-footer h4{
+   font-size: 2.5vw;
+   font-family: 'Poppins', sans-serif;
+   color:slategrey;
+   padding-top: 1vw;
+}
  
 }
