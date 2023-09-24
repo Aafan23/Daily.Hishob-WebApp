@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #f3f1f1;
+}
+
+
+@media (max-width:768px) {
+    .navbar{
+        width: 100%;
+        height: 35vw;
+        background-color: #103873;
+    }
+    .nav-box{
+        width: 100%;
+        height: 55%;
+       display: flex;
+       align-items: center;
+   
+
+    }
+    .nav-search{
+        margin-left: 7vw;
+        width: 87%;
+        height: 30%;
+      
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 2vw;
+
+    }
+    .nav-search img{
+        width: 8vw;
+        background-color: transparent;
+        padding-left: 2.5vw;
+    }
+    .nav-search input{
+        width: 80vw;
+    height: 10vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: start;
+    font-size: 3.5vw;
+    padding-left: 5vw;
+    font-family: 'Poppins', sans-serif;
+      
+    }
+    .nav-box img{
+        border-radius: 5vw;
+width: 30vw;
+    }
+    .nav-box h3{
+        font-size: 8vw;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+    padding-top: 2vw;
+    }
+    .hero-section{
+        width: 100%;
+    height: 50vw;
+    /* border: 1px solid red; */
+    
+    }
+    .hero-section img{
+        width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    border-radius: 5vw;
+    
+    }
+    .hero-header{
+        width: 100%;
+        height: 10vw;
+    }
+    .hero-header h3{
+     color: #0b2141;
+        padding-top: 3.5vw;
+        font-size: 3.5vw;
+        font-family: 'Poppins', sans-serif;
+    }
+    .hero{
+        width: 100%;
+        height: auto;
+        padding: 3vw;
+    }
+
+ 
+}
